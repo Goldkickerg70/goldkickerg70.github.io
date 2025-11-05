@@ -1922,15 +1922,7 @@ function autoSweetAction() {
             if (
                 // Check first 10 spells
                 nextSpellName(0) == "Sugar Lump" ||
-                nextSpellName(1) == "Sugar Lump" ||
-                nextSpellName(2) == "Sugar Lump" ||
-                nextSpellName(3) == "Sugar Lump" ||
-                nextSpellName(4) == "Sugar Lump" ||
-                nextSpellName(5) == "Sugar Lump" ||
-                nextSpellName(6) == "Sugar Lump" ||
-                nextSpellName(7) == "Sugar Lump" ||
-                nextSpellName(8) == "Sugar Lump" ||
-                nextSpellName(9) == "Sugar Lump"
+                nextSpellName(1) == "Sugar Lump"
             ) {
                 autoSweetAction.state = 1;
             }
