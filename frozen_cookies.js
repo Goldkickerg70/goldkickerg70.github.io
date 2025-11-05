@@ -17,10 +17,13 @@ var scriptElement =
     document.getElementById("frozenCookieScript") !== null
         ? document.getElementById("frozenCookieScript")
         : document.getElementById("modscript_frozen_cookies");
+
+// Update baseUrl to point to your own GitHub Pages repository
 var baseUrl =
     scriptElement !== null
         ? scriptElement.getAttribute("src").replace(/\/frozen_cookies\.js$/, "")
-        : "https://github.erbkaiser.com/FrozenCookies/";
+        : "https://goldkickerg70.github.io/"; // Change this to your GitHub Pages URL
+
 var FrozenCookies = {
     baseUrl: baseUrl,
     branch: "erb-",
@@ -42,14 +45,14 @@ var script_list = [
     "https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.highlighter.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.logAxisRenderer.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.cursor.min.js",
-    FrozenCookies.baseUrl + "/fc_preferences.js", // preferences must be loaded before the rest of the scripts
-    FrozenCookies.baseUrl + "/cc_upgrade_prerequisites.js", // upgrade prerequisites, used in fc_main.js
-    FrozenCookies.baseUrl + "/fc_main.js", // main logic
-    FrozenCookies.baseUrl + "/fc_gods.js", // gods minigame and dragon options
-    FrozenCookies.baseUrl + "/fc_spells.js", // spells minigame and autocasting
-    FrozenCookies.baseUrl + "/fc_bank.js", // bank minigame
-    FrozenCookies.baseUrl + "/fc_button.js", // button to open the Frozen Cookies menu
-    FrozenCookies.baseUrl + "/fc_infobox.js", // infobox
+    baseUrl + "/fc_preferences.js", // preferences must be loaded before the rest of the scripts
+    baseUrl + "/cc_upgrade_prerequisites.js", // upgrade prerequisites, used in fc_main.js
+    baseUrl + "/fc_main.js", // main logic
+    baseUrl + "/fc_gods.js", // gods minigame and dragon options
+    baseUrl + "/fc_spells.js", // spells minigame and autocasting
+    baseUrl + "/fc_bank.js", // bank minigame
+    baseUrl + "/fc_button.js", // button to open the Frozen Cookies menu
+    baseUrl + "/fc_infobox.js", // infobox
 ];
 
 FrozenCookies.loadInterval = setInterval(function () {
