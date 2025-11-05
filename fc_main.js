@@ -639,7 +639,7 @@ function updateAscendAmount(base) {
 function updateManaMax(base) {
     userInputPrompt(
         "Mana Cap!",
-        "Choose a maximum mana amount (100 max recommended)",
+        "Choose a maximum mana amount (37 Single 101 Double)",
         FrozenCookies[base],
         storeNumberCallback(base, 0)
     );
